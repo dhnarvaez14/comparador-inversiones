@@ -12,8 +12,8 @@ Funciona completamente en el navegador: no usa servidor. Guarda los datos digita
 
 ## Créditos
 
-Creada por Daniel Humberto Narvaez Gallardo, docente de Matemáticas Financieras.
+Creada por Daniel Humberto Narvaez Gallardo, red de curso Matemáticas Financieras.
 
 ## Uso libre
 
-Herramienta de uso libre y gratuito. Puedes usarla, compartirla y emplearla en tus clases citando al autor.
+Herramienta de uso libre y gratuito. Puedes usarla, compartirla y emplearla en tus clases, en cualquier período académico.
