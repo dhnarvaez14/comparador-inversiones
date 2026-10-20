@@ -12,7 +12,16 @@ Funciona completamente en el navegador: no usa servidor. Guarda los datos digita
 
 ## Créditos
 
-Creada por Daniel Humberto Narvaez Gallardo, red de curso Matemáticas Financieras.
+Creada por:
+
+- Aymer Roman Barrera Novoa
+- Daniel Humberto Narvaez Gallardo
+- Paola Liliana Garcia Corona
+- Eliana Josefa Martinez Pacheco
+- Grissy Janeth Gonzalez Sanchez
+- James Jair Jaraba Ascencio
+
+Red de curso Matemáticas Financieras (116005).
 
 ## Uso libre
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Comparador de Inversiones</title>
 <meta name="description" content="Estima el flujo de caja libre de dos empresas, calcula VPN, TIR, B/C, IR, VAUE y PRI y decide en cuál invertir. Herramienta de uso libre.">
-<meta name="author" content="Daniel Humberto Narvaez Gallardo">
+<meta name="author" content="Red de curso Matemáticas Financieras (116005)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -237,6 +237,14 @@ tr.tot td { font-weight: 600; background: var(--bg); }
 .cbtn { justify-self: center; font: 600 16px var(--body); background: var(--accent-ink); color: var(--accent); border: 0; border-radius: 8px; padding: 12px 22px; cursor: pointer; }
 .cbtn:focus-visible { outline: 3px solid var(--accent-ink); outline-offset: 3px; }
 .clogo { justify-self: center; background: #FFFFFF; border-radius: 10px; padding: 8px 14px; width: auto; height: 112px; max-width: 100%; }
+.cby { margin-top: 8px; padding-top: 18px; border-top: 1px solid currentColor; display: grid; gap: 10px; width: 100%; max-width: 760px; justify-items: center; }
+.clab { margin: 0; font: 600 11px var(--mono); letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.75; }
+.names { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 6px 18px; width: 100%; }
+.cby .names li { font-weight: 600; font-size: 16px; }
+.cred { margin: 4px 0 0; font-size: 14px; opacity: 0.92; }
+.credits .names.fn { grid-template-columns: 1fr; gap: 2px; }
+.credits .names.fn li { font-family: var(--display); font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
+.credits .names.fn + .role { margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -272,10 +280,7 @@ tr.tot td { font-weight: 600; background: var(--bg); }
       <p class="eyebrow">Universidad Nacional Abierta y a Distancia · UNAD</p>
       <h2 class="ctitle">Comparador de Inversiones</h2>
       <p class="csub">Indicadores de evaluación financiera · Escenario 4</p>
-      <dl class="cmeta">
-        <div><dt>Curso</dt><dd>Matemáticas Financieras · código 116005</dd></div>
-        <div><dt>Creada por</dt><dd>Daniel Humberto Narvaez Gallardo</dd><dd class="sm">Red de curso Matemáticas Financieras</dd></div>
-      </dl>
+      <div class="cby"><p class="clab">Creada por</p><ul class="names"><li>Aymer Roman Barrera Novoa</li><li>Daniel Humberto Narvaez Gallardo</li><li>Paola Liliana Garcia Corona</li><li>Eliana Josefa Martinez Pacheco</li><li>Grissy Janeth Gonzalez Sanchez</li><li>James Jair Jaraba Ascencio</li></ul><p class="cred">Red de curso Matemáticas Financieras (116005)</p></div>
       <button class="cbtn" id="start" type="button">Comenzar</button>
     </div>
     <div class="card">
@@ -290,7 +295,7 @@ tr.tot td { font-weight: 600; background: var(--bg); }
     <div class="card">
       <h2>Resultado de aprendizaje</h2>
       <p class="desc" style="font-size:15px">Analizar indicadores financieros de diversas alternativas de inversión bajo escenarios de incertidumbre, validando procedimientos matemáticos y criterios de evaluación (como VPN o TIR) para respaldar o refutar conclusiones de viabilidad.</p>
-      <p class="hint">Recurso de apoyo elaborado por el docente para el curso. Úsalo para practicar y compara siempre con tu propio desarrollo en Excel.</p>
+      <p class="hint">Recurso de apoyo elaborado por la red de curso. Úsalo para practicar y compara siempre con tu propio desarrollo en Excel.</p>
     </div>
   </section>
 
@@ -358,8 +363,8 @@ tr.tot td { font-weight: 600; background: var(--bg); }
   <footer class="credits">
     <div>
       <h2>Creada por</h2>
-      <p class="author">Daniel Humberto Narvaez Gallardo</p>
-      <p class="role">Red de curso Matemáticas Financieras</p>
+      <ul class="names fn"><li>Aymer Roman Barrera Novoa</li><li>Daniel Humberto Narvaez Gallardo</li><li>Paola Liliana Garcia Corona</li><li>Eliana Josefa Martinez Pacheco</li><li>Grissy Janeth Gonzalez Sanchez</li><li>James Jair Jaraba Ascencio</li></ul>
+      <p class="role">Red de curso Matemáticas Financieras (116005)</p>
     </div>
     <div>
       <h2>Uso libre</h2>
