@@ -48,6 +48,10 @@ body {
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
 .wrap { max-width: 1040px; margin: 0 auto; display: grid; gap: 20px; }
+header { display: flex; gap: 16px; align-items: center; }
+.hlogo { flex: none; background: #FFFFFF; border-radius: 8px; padding: 5px 10px; height: 66px; width: auto; border: 1px solid var(--line); }
+.htxt { min-width: 0; }
+@media (max-width: 520px) { header { align-items: flex-start; } .hlogo { height: 48px; } }
 header h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 5vw, 40px); line-height: 1.05; margin: 0 0 6px; letter-spacing: -0.02em; text-wrap: balance; }
 header p { margin: 0; color: var(--muted); max-width: 62ch; }
 .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); overflow-x: auto; }
@@ -250,8 +254,11 @@ tr.tot td { font-weight: 600; background: var(--bg); }
 <body>
 <div class="wrap">
   <header id="top" hidden>
-    <h1>Comparador de Inversiones</h1>
-    <p>Digita los datos iniciales de dos empresas, estima el flujo de caja libre de cada una, calcula los indicadores de evaluación financiera y decide en cuál conviene invertir.</p>
+    <img class="hlogo" id="hlogo" alt="UNAD, Universidad Nacional Abierta y a Distancia" width="90" height="66">
+    <div class="htxt">
+      <h1>Comparador de Inversiones</h1>
+      <p>Digita los datos iniciales de dos empresas, estima el flujo de caja libre de cada una, calcula los indicadores de evaluación financiera y decide en cuál conviene invertir.</p>
+    </div>
   </header>
 
   <div class="tabs" role="tablist" aria-label="Secciones">
@@ -860,6 +867,7 @@ tabs.forEach(k => $('t-' + k).addEventListener('click', () => {
 $('start').addEventListener('click', () => $('t-datos').click());
 let lastW = 0;
 window.addEventListener('resize', () => { const w = $('schart').clientWidth; if (w && Math.abs(w - lastW) > 20) { lastW = w; update(); } });
+$('hlogo').src = document.querySelector('.clogo').src;
 syncGlobal(); buildInputs(); update();
 
 </script>
